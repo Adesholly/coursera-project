@@ -1,0 +1,146 @@
+body {
+background-color: #edefee;
+  font-family: "Markazi Text", serif;
+  margin: 3rem 5% 3rem 5%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(109, 92, 92);
+  opacity: 0;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  animation: animate-text 10s linear infinite;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav {
+    background-color: #404644;
+    padding: 0.2rem 0 0.2rem 0;
+    margin: 2rem 0 1.5rem 0;
+    border-radius: 1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+nav li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.2rem;
+    
+}
+
+section {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  
+}
+
+#discount > article {
+  background-image: url(background.jpg);
+  background-position: right bottom;
+  color: #fff;
+}
+
+
+
+article {
+  flex: 1;
+  background-color: rgb(254, 240, 199);
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+
+article > img {
+  height: 40%;
+  width: 100%;
+}
+
+article ul li {
+  list-style-type: none;
+}
+
+footer {
+    display: flex;   
+}
+
+footer div {
+    flex: 1
+}
+
+
+div > img {
+    max-height: 10rem;
+}
+
+.copyright {
+ border-top:  2px solid #495e57
+}
+
+.copyright p {
+  text-align: right;
+}
+
+
+
+@keyframes animate-text {
+  10% {
+    opacity: 1;
+    color: #9a4295;
+    letter-spacing: 10px;
+  }
+
+  35% {
+
+    color: #ffffff;
+    opacity: 1;
+    letter-spacing: 10px;
+  }
+
+  60% {
+    color: #f5f5f5;
+    opacity: 1;
+    letter-spacing: 10px;
+  }
+
+  85% {
+
+    color: #460bcf;
+    opacity: 1;
+    letter-spacing: 10px;
+  }
+
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    opacity: 0;
+    letter-spacing: 0;
+    color: #fff;
+
+  }
+}
